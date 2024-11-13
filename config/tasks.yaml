@@ -1,0 +1,20 @@
+research_task:
+  description: >
+    Conduza uma pesquisa detalhada sobre {topic}. Certifique-se de encontrar informações interessantes e relevantes, considerando o ano de 2024.
+  expected_output: >
+    Uma lista com 10 pontos principais sobre as informações mais relevantes de {topic}.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Revise o contexto que você recebeu e expanda cada tópico em uma seção completa para um relatório. Certifique-se de que o relatório seja detalhado e contenha todas as informações relevantes.
+  expected_output: >
+    Um relatório completo com os principais tópicos, cada um com uma seção detalhada. O relatório deve estar em português (PT-BR) e formatado como texto embutido em HTML.
+  agent: reporting_analyst
+
+fact_checking_task:
+  description: >
+    Verifique os dados obtidos para garantir que estão corretos e precisos. Corrija qualquer erro identificado.
+  expected_output: >
+    Um resumo com a validação dos dados, destacando quaisquer ajustes realizados.
+  agent: fact_checker
